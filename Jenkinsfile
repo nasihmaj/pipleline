@@ -8,7 +8,7 @@ pipeline {
             steps {
                 checkout([$class: 'GitSCM',
                           branches: [[name: '*/main']],
-                          userRemoteConfigs: [[url: 'https://github.com/nasihmaj/pull-p']]
+                          userRemoteConfigs: [[url: 'https://github.com/nasihmaj/pipleline']]
                 ])
                 dir('pull-p') {
                     bat 'mvn clean install'
